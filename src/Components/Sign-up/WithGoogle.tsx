@@ -12,7 +12,8 @@ function WithGoogle() {
     };
     return (
         <div>
-            <button onClick={signInWithGoogle}>Sign up with Google</button>
+            <button onClick={signInWithGoogle}
+            className="w-[300px] h-[58px] bg-bg rounded-[30px] text-formBg font-medium text-[18px] hover:cursor-pointer">Sign up with Google</button>
 
         </div>
     )
