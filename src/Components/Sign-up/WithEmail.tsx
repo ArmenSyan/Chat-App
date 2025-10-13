@@ -3,8 +3,8 @@ import { useState } from "react";
 import { auth } from "../../firebase";
 
 function WithEmail() {
-      const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+      const [email, setEmail] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
 
   const handleSignUp = async () => {
     try {

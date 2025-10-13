@@ -6,8 +6,8 @@ function WithGoogle() {
         try {
             const result: UserCredential = await signInWithPopup(auth, provider);
             console.log("User:", result.user);
-        } catch (error: unknown) {
-            console.error("Error:", error.message);
+        } catch (error: any) {
+            console.error("Error:");
         }
     };
     return (
