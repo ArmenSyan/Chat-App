@@ -1,3 +1,4 @@
+import WithEmail from "./WithEmail"
 
 
 function SignIn() {
@@ -9,7 +10,7 @@ function SignIn() {
           <p className="text-p text-[15px] font-medium w-[300px]">Create an account to enjoy our chat for free!</p>
         </div>
         <div className="flex flex-col justify-evenly items-center gap-y-[10px]">
-
+          <WithEmail />
           {/* <p className="text-[15px] text-p font-medium">or</p> */}
 
         </div>
