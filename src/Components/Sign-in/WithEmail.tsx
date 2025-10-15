@@ -14,7 +14,6 @@ function WithEmail() {
             const user = userCredential.user;
 
             console.log("✅ User logged in:", user);
-
             // user содержит всю информацию:
             // user.uid, user.email, user.displayName, user.photoURL, ...
             navigate("/");
