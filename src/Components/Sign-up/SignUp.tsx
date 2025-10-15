@@ -16,7 +16,7 @@ function SignUp() {
 
                     <WithEmail />
                     <p className="text-[15px] text-p font-medium">or</p>
-                    <WithGoogle />
+                    <WithGoogle mode={'sign-up'}/>
 
                 </div>
             </div>
