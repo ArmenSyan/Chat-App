@@ -5,7 +5,7 @@ import WithEmail from "./WithEmail"
 function SignIn() {
   return (
     <div className="bg-[url(/image.png)] w-full h-screen bg-cover bg-center bg-no-repeat flex justify-evenly items-center">
-      <div className="w-[500px] h-[555px] bg-formBg rounded-[32px] flex flex-col justify-evenly items-center">
+      <div className="w-[470px] h-[520px] bg-formBg rounded-[32px] flex flex-col justify-evenly items-center">
         <div className="flex flex-col items-center gap-y-3.5 text-center">
           <h1 className="text-h1 text-[36px] font-semibold">Sign in</h1>
           <p className="text-p text-[15px] font-medium w-[300px]">Sign in and enjoy our chat for free!</p>

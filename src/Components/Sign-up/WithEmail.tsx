@@ -24,7 +24,7 @@ function WithEmail() {
     }
   };
   return (
-    <div className="flex flex-col justify-evenly items-center gap-y-[20px]">
+    <div className="flex flex-col justify-evenly items-center gap-y-[10px]">
       <input
         type="text"
         className="w-[340px] h-[42px] px-[16px] text-p placeholder:font-normal placeholder:text-plh rounded-[7px] border-[1px] border-plh/50 focus:outline-[1px] focus:outline-plh/70 font-medium"

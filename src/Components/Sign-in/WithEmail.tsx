@@ -14,20 +14,9 @@ function WithEmail() {
             const user = userCredential.user;
 
             console.log("✅ User logged in:", user);
-            // user содержит всю информацию:
-            // user.uid, user.email, user.displayName, user.photoURL, ...
             navigate("/");
         } catch (error: any) {
-            // 🔸 Если юзера нет или пароль неверный — ловим ошибку
-            if (error.code === "auth/user-not-found") {
-                console.error("❌ Пользователь не найден");
-            } else if (error.code === "auth/wrong-password") {
-                console.error("❌ Неверный пароль");
-            } else if (error.code === "auth/invalid-email") {
-                console.error("❌ Неверный формат email");
-            } else {
-                console.error("❌ Ошибка входа:", error.message);
-            }
+            console.error("❌ Ошибка входа:", error.message);
         }
     };
     return (

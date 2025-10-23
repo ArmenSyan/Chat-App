@@ -8,7 +8,6 @@ import { FourSquare } from "react-loading-indicators";
 function App() {
   const [user, loading] = useAuthState(auth)
 
-  console.log(user);
 
 
   return (
