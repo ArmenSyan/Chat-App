@@ -1,9 +1,9 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, NavigateFunction, useNavigate } from "react-router-dom";
 import { auth, provider, signInWithPopup } from "../../firebase"
 import { UserCredential } from "firebase/auth";
 
 function WithGoogle({ mode }: { mode: string }) {
-    const navigate = useNavigate()
+    const navigate: NavigateFunction = useNavigate()
     const signInWithGoogle = async () => {
         try {
             const result: UserCredential = await signInWithPopup(auth, provider);
