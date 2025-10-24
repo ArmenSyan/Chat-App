@@ -1,12 +1,12 @@
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { NavigateFunction, useNavigate } from "react-router-dom";
 import { auth } from "../../firebase";
 
 function WithEmail() {
     const [email, setEmail] = useState<string>("");
     const [password, setPassword] = useState<string>("");
-    const navigate = useNavigate()
+    const navigate: NavigateFunction = useNavigate()
     const handleSignIn = async () => {
         try {
             // 🔸 Пытаемся войти

@@ -8,6 +8,8 @@ function WithGoogle({ mode }: { mode: string }) {
         try {
             const result: UserCredential = await signInWithPopup(auth, provider);
             console.log("User:", result.user);
+            console.log(result.user.displayName);
+            
             navigate('/')
         } catch (error: any) {
             console.error("Error:");

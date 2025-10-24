@@ -5,6 +5,7 @@ import SignUp from "./Components/Sign-up/SignUp"
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from './firebase';
 import { FourSquare } from "react-loading-indicators";
+import { ContextProvider } from "./Components/Context/Context";
 function App() {
   const [user, loading] = useAuthState(auth)
 
@@ -12,21 +13,23 @@ function App() {
 
   return (
     <>
-      {loading ?
-        <div className="fixed top-[50vh] left-[50vw]">
-          <FourSquare color="#A7D7C5" size="medium" text="" textColor="" />
-        </div>
-        :
-        <Routes>
+      <ContextProvider>
+        {loading ?
+          <div className="fixed top-[50vh] left-[50vw]">
+            <FourSquare color="#A7D7C5" size="medium" text="" textColor="" />
+          </div>
+          :
+          <Routes>
 
-          <Route path="/Sign-in" element={<SignIn />} />
-          <Route path="/Sign-up" element={<SignUp />} />
-          <Route
-            path="/"
-            element={user ? <Chat /> : <Navigate to="/sign-up" replace />}
-          />
-        </Routes>
-      }
+            <Route path="/Sign-in" element={<SignIn />} />
+            <Route path="/Sign-up" element={<SignUp />} />
+            <Route
+              path="/"
+              element={user ? <Chat /> : <Navigate to="/sign-up" replace />}
+            />
+          </Routes>
+        }
+      </ContextProvider>
     </>
   )
 }
