@@ -1,15 +1,21 @@
-import { createContext, useContext, useState, useEffect } from "react";
+import { createContext, useContext, useState, useEffect, ReactNode } from "react";
 import { onAuthStateChanged, User } from "firebase/auth";
 import { auth } from "../../firebase";
 
-const Context: React.Context<unknown> = createContext<unknown>();
+interface ContextType {
+    user: User | null;
+    setUser: React.Dispatch<React.SetStateAction<User | null>>;
+    loading: boolean;
+}
 
-export function ContextProvider({ children }) {
+const Context = createContext<ContextType | null>(null);
+
+export function ContextProvider({ children }: { children: ReactNode }) {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const unsubscribe = onAuthStateChanged(auth, (firebaseUser: User | null) => {
+        const unsubscribe = onAuthStateChanged(auth, (firebaseUser) => {
             setUser(firebaseUser);
             setLoading(false);
         });
