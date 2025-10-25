@@ -39,14 +39,24 @@ function Messages() {
         return () => unsubscribe();
     }, []);
 
-    if(user.uid){
-        console.log(true);
+    if (user.uid && messages.length > 0) {
+        console.log(user.uid, messages[0].userId);
 
     }
 
     return (
-        <div className="lg:w-[552px] lg:h-[460px] bg-formBg bg-no-repeat bg-cover bg-center rounded-[16px] overflow-y-auto">
-
+        <div className={`lg:w-[552px] lg:h-[460px] bg-formBg bg-no-repeat bg-cover bg-center rounded-[16px] overflow-y-auto flex flex-col ${messages.length == 0 ? 'justify-center' : 'justify-start' }  items-center`}>
+            {messages.length > 0 ?
+                messages.map((el, i) => (
+                    <div 
+                    key={i}
+                    className=""
+                    >
+                        
+                    </div>
+                ))
+                : <p className="text-[]">No Messages</p>
+            }
         </div>
     )
 }
