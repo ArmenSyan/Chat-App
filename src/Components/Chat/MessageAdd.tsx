@@ -44,7 +44,7 @@ function MessageAdd() {
             />
             <button 
             onClick={sendMessage}
-            className="lg:w-[130px] lg:h-[36px] rounded-[10px] bg-sendBtn text-[white] lg:text-[15px] lg:font-bold hover:cursor-pointer hover:bg-sendBtnHover duration-200">Send</button>
+            className="lg:w-[130px] lg:h-[36px] rounded-[10px] bg-purple text-[white] lg:text-[15px] lg:font-bold hover:cursor-pointer hover:bg-purpleHover duration-200">Send</button>
         </div>
     )
 }

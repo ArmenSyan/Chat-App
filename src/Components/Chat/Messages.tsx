@@ -59,7 +59,7 @@ function Messages() {
                             <FaRegUser />
                         </div>
                         <div className={`text-p text-[14px] max-w-[250px] px-[10px] py-[3px] font-semibold bg-formBg rounded-[10px] flex flex-col justify-evenly  ${user.uid == el.userId ? 'rounded-br-[0px] items-end' : 'rounded-bl-[0px] items-start'} `} >
-                            <h1 className="text-[15px] text-sendBtn font-bold ">{el.userName}</h1>
+                            <h1 className={`text-[15px]  font-bold ${user.uid == el.userId ? 'text-purpleHover' : 'text-purple'}`}>{el.userName}</h1>
                             <div className={`flex justify-between items-end w-full ${user.uid == el.userId ? 'flex-row-reverse' : 'flex-row'} `}>
                                 <p>{el.text}</p>
                                 <p className={`text-plh opacity-70 text-[10px] mt-[3px] ${user.uid == el.userId ? 'mr-[10px]' : 'ml-[10px]'} `}>{new Date(el.timestamp).toLocaleTimeString().slice(0, 5)}</p>
