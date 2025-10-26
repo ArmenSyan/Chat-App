@@ -5,7 +5,7 @@ import WithGoogle from "./WithGoogle";
 function SignUp() {
 
     return (
-        <div className="bg-[url(/image.png)] w-full h-screen bg-cover bg-center bg-no-repeat flex justify-evenly items-center">
+        <div className="bg-gradient-to-r from-black from-10% via-purple via-45% to-black to-90% w-full h-screen bg-cover bg-center bg-no-repeat flex justify-evenly items-center">
             <div className="w-[500px] h-[555px] bg-formBg rounded-[32px] flex flex-col justify-evenly items-center">
                 <div className="flex flex-col items-center gap-y-3.5 text-center">
                     <h1 className="text-h1 text-[36px] font-semibold">Create An Account</h1>
