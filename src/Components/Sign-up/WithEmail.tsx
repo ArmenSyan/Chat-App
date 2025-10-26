@@ -15,7 +15,7 @@ function WithEmail() {
 
       await updateProfile(user, { displayName: username, });
 
-      
+
 
       console.log("✅ User created:", user);
       navigate("/sign-in");
@@ -24,7 +24,7 @@ function WithEmail() {
     }
   };
   return (
-    <div className="flex flex-col justify-evenly items-center gap-y-[10px] text-[12px] md:text-[14px] lg:text-base">
+    <div className="flex flex-col justify-evenly items-center gap-y-[10px] text-[12px] md:text-[14px] lg:text-base ">
       <input
         type="text"
         className="w-[200px] md:w-[250px] lg:w-[340px] h-[31px] md:h-[34px] lg:h-[42px] px-[16px] text-p placeholder:font-normal placeholder:text-plh rounded-[7px] border-[1px] border-plh/50 focus:outline-[1px] focus:outline-plh/70 font-medium"
