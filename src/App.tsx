@@ -15,7 +15,7 @@ function App() {
     <>
       <ContextProvider>
         {loading ?
-          <div className="fixed top-[50vh] left-[50vw]">
+          <div className="w-full h-screen flex justify-evenly items-center">
             <FourSquare color="#A7D7C5" size="medium" text="" textColor="" />
           </div>
           :
