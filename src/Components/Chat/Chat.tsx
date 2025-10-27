@@ -5,7 +5,7 @@ function Chat() {
   return (
     <div className="w-full h-screen bg-gradient-to-r from-black from-10% via-purple via-30% to-black to-90% font-inter flex flex-col justify-evenly items-center">
       <div className="flex flex-col gap-y-[30px] items-center ">
-        <h1 className="text-white text-[20px] md:text-[28px] lg:text-[32px] font-bold ">Live Chat</h1>
+        <h1 className="text-white text-[22px] md:text-[28px] lg:text-[32px] font-bold ">Live Chat</h1>
         <Messages />
         <MessageAdd />
       </div>
