@@ -15,8 +15,8 @@ function App() {
     <>
       <ContextProvider>
         {loading ?
-          <div className="w-full h-screen flex justify-evenly items-center">
-            <FourSquare color="#A7D7C5" size="medium" text="" textColor="" />
+          <div className="w-full h-screen flex justify-evenly items-center bg-black">
+            <FourSquare color="#6C63FF" size="medium" text="" textColor="" />
           </div>
           :
           <Routes>
