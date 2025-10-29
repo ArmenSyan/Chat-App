@@ -16,19 +16,20 @@ function MessageAdd() {
 
     const sendMessage = async () => {
         if (!text.trim()) return;
+        if(user){
         const messageRef: DatabaseReference = ref(db, 'messages');
 
-        const newMessage: message = {
-            text: text,
-            userId: user.uid,
-            userName: user.displayName || 'Anonimus',
-            timestamp: Date.now(),
+            const newMessage: message = {
+                text: text,
+                userId: user.uid,
+                userName: user.displayName || 'Anonimus',
+                timestamp: Date.now(),
+            }
+            
+            
+            await push(messageRef, newMessage);
+            setText('')
         }
-        console.log(typeof Date.now());
-
-
-        await push(messageRef, newMessage);
-        setText('')
     }
 
 
