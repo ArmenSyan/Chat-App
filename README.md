@@ -1,50 +1,43 @@
-# React + TypeScript + Vite
+<h1 align="center">💬 Real-Time Chat App</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  A modern real-time chat application built with <b>TypeScript</b>, <b>React (Vite)</b>, and <b>Tailwind CSS</b>.<br/>
+  Powered by <b>Firebase Authentication</b> and <b>Realtime Database</b> for instant message updates and secure user login.
+</p>
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🔐 **User Authentication** — Sign up and log in using Firebase Auth  
+- 💬 **Real-Time Messaging** — Messages sync instantly using Firebase Realtime Database  
+- 👤 **User-Specific Chats** — Messages are tied to authenticated users  
+- 🕓 **Timestamps** — Each message displays when it was sent  
+- 🎨 **Responsive Design** — Built with Tailwind CSS for all screen sizes  
+- ⚡ **Fast & Modern** — Developed using React + Vite + TypeScript  
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## 🛠️ Tech Stack
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+| Technology | Description |
+|-------------|-------------|
+| **React (Vite)** | Fast and modular frontend setup |
+| **TypeScript** | Type-safe React development |
+| **Tailwind CSS** | Utility-first styling |
+| **Firebase Auth** | Secure user authentication |
+| **Firebase Realtime Database** | Real-time message storage & updates |
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
+## 👨‍💻 Author
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+**Armen Sahakyan**
+| Frontend Developer | React & Firebase Enthusiast |
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- 🌐 [Upwork Profile](https://www.upwork.com/freelancers/~017ebd34d9e3ccacc1)
+- ✉️ [mail](armen.sahakyan.ait@gmail.com)
+- 💻 [GitHub](https://github.com/ArmenSyan)
+
+
+
+<p align='center'>⭐ If you like this project, give it a star on GitHub!</p>
