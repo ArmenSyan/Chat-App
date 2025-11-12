@@ -13,9 +13,9 @@ function WithEmail() {
       const userCredential: UserCredential = await createUserWithEmailAndPassword(auth, email, password);
       const user: User = userCredential.user;
 
-      await updateProfile(user, { displayName: username, });
+      await user.getIdToken(true);
 
-
+      await updateProfile(user, { displayName: username });
 
       console.log("✅ User created:", user);
       navigate("/sign-in");

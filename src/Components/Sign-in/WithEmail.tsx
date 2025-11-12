@@ -35,7 +35,7 @@ function WithEmail() {
 
             <button
                 className="w-[200px] md:w-[240px] lg:w-[300px] h-[32px] md:h-[40px] lg:h-[48px] bg-bg rounded-[30px] text-formBg font-medium text-[14px] md:text-base lg:text-[18px] hover:cursor-pointer hover:shadow-p/30 hover:shadow-md duration-300 transition-all"
-                onClick={handleSignIn}>Sign Up</button>
+                onClick={handleSignIn}>Sign in</button>
         </div>
     )
 }

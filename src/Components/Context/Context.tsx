@@ -8,7 +8,7 @@ interface ContextType {
   loading: boolean;
 }
 
-export const Context = createContext<ContextType | null>(null);
+const Context = createContext<ContextType | undefined>(undefined);
 
 export function ContextProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
